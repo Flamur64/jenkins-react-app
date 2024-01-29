@@ -9,7 +9,7 @@ node {
     sh 'docker exec node npm --version'
     sh 'docker exec node ls -la'
     sh 'docker exec node npm ci'
-    sh 'echo "YOUR COMMANDS HERE!"'
+    sh 'echo "Fertig!"'
     sh 'docker kill node'
   }
   stage('Cleanup') {
